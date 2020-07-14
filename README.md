@@ -14,7 +14,7 @@ Zip4j - A java library for zip files / streams
 
 for rating Zip4j as the best java library for zip files <sup>[[1][1], [2][2], [3][3], [4][4]]</sup>. It has encouraged me to 
 bring this project to life again after a gap of several years. I tried to add some of the important features that 
-were requested over this time, and also made api much more neater. The newer version (> 2.0.0) now supports streams,
+were requested over this time, and also made api much neater. The newer version (> 2.0.0) now supports streams,
 which was understandably, one of the most requested feature. If you have any feedback, bugs to report, feature 
 requests, etc, please open an issue here on github. I will try to address them as soon as I can. I also monitor the
 tag `zip4j` on [stackoverflow][10].
@@ -23,7 +23,7 @@ tag `zip4j` on [stackoverflow][10].
 
 Zip4j is the most comprehensive java library for Zip files or streams. As of this writing, it is the only java library 
 which has support for zip encryption, apart from several other features. It tries to make handling zip files/streams 
-a lot more easier. No more clunky boiler plate code with input streams and output streams. As you can see in the usage 
+a lot easier. No more clunky boiler plate code with input streams and output streams. As you can see in the usage 
 section below, working with zip files can now even be a single line of code, compared to [this][5]. I mean no offense
 to the Java's in-built zip support. In fact, this library depends on Java's in-built zip code and it would have been 
 significantly more ~~complicated~~ challenging if I had to write compression logic as well. But lets be honest, working with zip 
@@ -199,7 +199,7 @@ for file sizes. But with growing file sizes compared to a few decades back, zip 
 sizes which extends 4 bytes by adding additional headers which uses 8 bytes for file sizes (compressed and 
 uncompressed file sizes). This feature is known as Zip64.
 
-Zip4j will automatically make a zip file a Zip64 format and add appropriate headers, when it detects the zip file to be
+Zip4j will automatically make a zip file a Zip64 format and add appropriate headers when it detects the zip file to be
 crossing this file size limit. You do not have to explicitly specify any flag for Zip4j to use this feature. 
 
 ### Extracting All files in a zip
